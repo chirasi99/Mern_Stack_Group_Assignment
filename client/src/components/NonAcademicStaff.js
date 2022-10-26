@@ -86,7 +86,7 @@ export default class NonAcademicStaff extends Component {
           </tbody>
         </table>
         <button className="btn btn-success">
-          <a href="/add" style={{ textDecoration: "none", color: "white" }}>
+          <a href="/nonAcademic/add" style={{ textDecoration: "none", color: "white" }}>
             Add New Non Academic Staff
           </a>
         </button>

@@ -23,10 +23,11 @@ export default class App extends Component {
             <Route path="/teacher/edit/:id" element={<EditPost />}></Route>
             <Route path="/teacher/post/:id" element={<PostDetails />}></Route>
 
+            <Route path="/nonacademic" exact element={<NonAcademicStaff />}></Route>
             <Route path="/nonacademic/add" element={<CreateNonAcademicStaff />}></Route>
             <Route path="/nonacademic/edit/:id" element={<EditNonAcademicStaff />}></Route>
             <Route path="/nonacademic/details/:id" element={<NonAcademicStaffDetails />}></Route>
-            <Route path="/nonacademic" exact element={<NonAcademicStaff />}></Route>
+            
             
           </Routes>
         </div>

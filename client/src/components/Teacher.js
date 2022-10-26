@@ -84,7 +84,7 @@ export default class Teacher extends Component {
           </tbody>
         </table>
         <button className="btn btn-success">
-          <a href="/add" style={{ textDecoration: "none", color: "white" }}>
+          <a href="/teacher/add" style={{ textDecoration: "none", color: "white" }}>
             Add New Teacher Record
           </a>
         </button>
