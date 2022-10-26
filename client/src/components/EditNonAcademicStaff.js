@@ -1,5 +1,5 @@
 import axios from "axios";
-
+import NavBar from "./NavBar";
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 
@@ -55,6 +55,8 @@ function EditNonAcademicStaff() {
   };
 
   return (
+    <>
+    <NavBar title="NON ACADEMIC STAFF" nonacademic/>
     <div className="col-md-8 mt-4 mx-auto">
       <h1 className="h3 mb-3 font-weight-normal">Edit Non Academic Staff</h1>
       <form className="needs-validation" onSubmit={handleSubmit} noValidate>
@@ -104,6 +106,7 @@ function EditNonAcademicStaff() {
         </button>
       </form>
     </div>
+    </>
   );
 }
 

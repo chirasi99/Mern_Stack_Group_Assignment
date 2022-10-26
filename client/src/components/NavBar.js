@@ -1,15 +1,13 @@
-import React, { Component } from "react";
+import React from "react";
 
-export default class NavBar extends Component {
-  render() {
-    return (
-      <div className="container">
-        <nav className="navbar navbar-dark bg-dark">
-          <a className="navbar-brand" href="/">
-            Non Academic Staff
-          </a>
-        </nav>
-      </div>
-    );
-  }
+export default function NavBar({ title, link}) {
+  return (
+    <div className="container">
+      <nav className="navbar navbar-dark bg-dark mb-4">
+        <a className="navbar-brand" href={link}>
+          {title}
+        </a>
+      </nav>
+    </div>
+  );
 }

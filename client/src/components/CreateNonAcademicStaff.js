@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import axios from "axios";
+import NavBar from "./NavBar";
 
 export default class CreateNonAcademicStaff extends Component {
   constructor(props) {
@@ -41,6 +42,8 @@ export default class CreateNonAcademicStaff extends Component {
 
   render() {
     return (
+    <>
+    <NavBar title="NON ACADEMIC STAFF" link="/nonacademic"/>
       <div className="col-md-8 mt-4 mx-auto">
         <h1 className="h3 mb-3 font-weight-normal">Add New Non Academic Staff Role</h1>
         <form className="needs-validation" noValidate>
@@ -91,6 +94,7 @@ export default class CreateNonAcademicStaff extends Component {
           </button>
         </form>
       </div>
-    );
+      </>
+    )
   }
 }

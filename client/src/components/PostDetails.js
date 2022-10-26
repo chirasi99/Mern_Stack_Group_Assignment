@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import NavBar from "./NavBar";
 
 function PostDetails() {
   const [teacher, setTeacher] = useState({});
@@ -19,6 +20,8 @@ function PostDetails() {
   }, [id]);
 
   return (
+    <>
+    <NavBar title="TEACHER" link="/teacher"/>
     <div style={{ marginTop: "20px" }}>
       <h4>{teacher.Full_Name}</h4>
       <hr></hr>
@@ -29,6 +32,7 @@ function PostDetails() {
         <dd className="col-sm-9">{teacher.Address}</dd>
       </dl>
     </div>
+    </>
   );
 }
 
