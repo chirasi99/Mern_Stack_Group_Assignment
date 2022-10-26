@@ -56,7 +56,7 @@ function EditNonAcademicStaff() {
 
   return (
     <>
-    <NavBar title="NON ACADEMIC STAFF" nonacademic/>
+    <NavBar title="NON ACADEMIC STAFF" link="/nonacademic"/>
     <div className="col-md-8 mt-4 mx-auto">
       <h1 className="h3 mb-3 font-weight-normal">Edit Non Academic Staff</h1>
       <form className="needs-validation" onSubmit={handleSubmit} noValidate>
