@@ -8,6 +8,7 @@ export default function Login() {
   return (
     <div className="mt-100 d-flex justify-content-center align-items-center" style={{minHeight: "100vh"}}>
       <div className="w-50">
+        <h1>School Management System</h1>
         <h3>Login As</h3>
         <button
           className="btn btn-secondary mr-4"
@@ -21,7 +22,7 @@ export default function Login() {
           id="btn-nonAcademicStaff"
           onClick={() => setIsTeacher(false)}
         >
-          NonAcademicStaff
+          Non Academic Staff
         </button>
 
         <form className="mt-4">
