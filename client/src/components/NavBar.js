@@ -6,7 +6,7 @@ export default class NavBar extends Component {
       <div className="container">
         <nav className="navbar navbar-dark bg-dark">
           <a className="navbar-brand" href="/">
-            Teacher_Role
+            Non Academic Staff
           </a>
         </nav>
       </div>

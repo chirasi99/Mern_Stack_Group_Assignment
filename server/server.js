@@ -6,12 +6,14 @@ const cors = require("cors");
 const app = express();
 //import routes
 const postRoutes = require("./routes/posts");
+const nonAcademicStaffRoutes = require("./routes/nonAcademicStaff");
 
 //app middleware
 app.use(bodyParser.json());
 app.use(cors());
 
 app.use(postRoutes);
+app.use(nonAcademicStaffRoutes);
 const PORT = 8000;
 const DB_URL =
   "mongodb+srv://user1:user1@mernapp.awkqwf2.mongodb.net/?retryWrites=true&w=majority";
